@@ -20,7 +20,7 @@ imagePullSecret:
 service:
   type: ClusterIP
   port: 80
-  targetPort: 8080
+  targetPort: 8081
 
 ingress:
   className: nginx
