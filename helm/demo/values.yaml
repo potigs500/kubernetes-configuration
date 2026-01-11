@@ -5,11 +5,11 @@ app:
 
 image:
   repository: potigs500/demo
-  tag: "latest"
+  tag: latest
   pullPolicy: IfNotPresent
 
 dockerRegistry:
-  server: https://hub.docker.com
+  server: https://index.docker.io/v1/
   username: potigs500
   password: !MUa413!!MUa413!
   email: potorad@gmail.com
