@@ -1,0 +1,32 @@
+replicaCount: 1
+
+app:
+  name: demo
+
+image:
+  repository: potigs500/demo
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+dockerRegistry:
+  server: https://hub.docker.com
+  username: potigs500
+  password: !MUa413!!MUa413!
+  email: potorad@gmail.com
+
+imagePullSecret:
+  name: dockerhub-credentials
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
+ingress:
+  className: nginx
+  host: demo.local
+  path: /
+  pathType: Prefix
+
+resources: {}
+env: []
